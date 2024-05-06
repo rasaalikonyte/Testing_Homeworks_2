@@ -1,0 +1,312 @@
+{
+	"id": "7548a174-4a69-4f43-888a-09290232affd",
+	"name": "AutomativeTesting Homework2_3",
+	"timestamp": "2024-05-06T12:44:00.085Z",
+	"collection_id": "34607912-144f46c7-b904-4aed-bed5-d3533e84c540",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 6,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2024-05-06T12:43:58.156Z",
+	"totalFail": 9,
+	"results": [
+		{
+			"id": "68173cc7-9d44-4656-b0af-498659296c37",
+			"name": "Get All Items",
+			"url": "http://localhost:3000/api/items",
+			"time": 7,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Resp.body is not empty": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Resp.body is not empty": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				7
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Resp.body is not empty": true
+				}
+			]
+		},
+		{
+			"id": "695ad1ac-576e-431b-a91f-2cb1b767ea7f",
+			"name": "Post New Shop",
+			"url": "http://localhost:3000/api/shops",
+			"time": 5,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Successful POST request. Status 201": true
+			},
+			"testPassFailCounts": {
+				"Successful POST request. Status 201": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				5
+			],
+			"allTests": [
+				{
+					"Successful POST request. Status 201": true
+				}
+			]
+		},
+		{
+			"id": "15808053-e6f4-49bd-8ae9-ee75f6cedcd8",
+			"name": "Update Item",
+			"url": "http://localhost:3000/api/items",
+			"time": 4,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Resp.body has Id": false,
+				"Resp.body (Id) is not empty": false,
+				"Resp.body has at lease 3 properties": false
+			},
+			"testPassFailCounts": {
+				"Resp.body has Id": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Resp.body (Id) is not empty": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Resp.body has at lease 3 properties": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				4
+			],
+			"allTests": [
+				{
+					"Resp.body has Id": false,
+					"Resp.body (Id) is not empty": false,
+					"Resp.body has at lease 3 properties": false
+				}
+			]
+		},
+		{
+			"id": "9374cba3-391b-4f43-87f6-3d902b9c4ae4",
+			"name": "Update Shop",
+			"url": "http://localhost:3000/api/shops",
+			"time": 4,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Resp.body has Id": false,
+				"Resp.body (Id) is not empty": false,
+				"Resp.body has at lease 3 properties": false
+			},
+			"testPassFailCounts": {
+				"Resp.body has Id": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Resp.body (Id) is not empty": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Resp.body has at lease 3 properties": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				4
+			],
+			"allTests": [
+				{
+					"Resp.body has Id": false,
+					"Resp.body (Id) is not empty": false,
+					"Resp.body has at lease 3 properties": false
+				}
+			]
+		},
+		{
+			"id": "2e4f3e65-dd85-4a51-91f6-04d5668863f3",
+			"name": "Delete Shop",
+			"url": "http://localhost:3000/api/shops",
+			"time": 6,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Delete status 204": false
+			},
+			"testPassFailCounts": {
+				"Delete status 204": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				6
+			],
+			"allTests": [
+				{
+					"Delete status 204": false
+				}
+			]
+		},
+		{
+			"id": "40caadf3-b8d3-422f-9768-22d5196796c1",
+			"name": "Delete Item",
+			"url": "http://localhost:3000/api/items",
+			"time": 6,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Delete status 204": false,
+				"Response body is empty": false
+			},
+			"testPassFailCounts": {
+				"Delete status 204": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Response body is empty": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				6
+			],
+			"allTests": [
+				{
+					"Delete status 204": false,
+					"Response body is empty": false
+				}
+			]
+		},
+		{
+			"id": "0c52b426-2d18-47a5-9562-eda0bbd98a62",
+			"name": "Post New Item",
+			"url": "http://localhost:3000/api/items",
+			"time": 5,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Successful POST request. Status 201": true
+			},
+			"testPassFailCounts": {
+				"Successful POST request. Status 201": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				5
+			],
+			"allTests": [
+				{
+					"Successful POST request. Status 201": true
+				}
+			]
+		},
+		{
+			"id": "d4f2af45-f36d-4b51-9136-90d8828478b3",
+			"name": "Get All Shops",
+			"url": "http://localhost:3000/api/shops",
+			"time": 5,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Resp.body is not empty": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Resp.body is not empty": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				5
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Resp.body is not empty": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 42,
+	"collection": {
+		"requests": [
+			{
+				"id": "68173cc7-9d44-4656-b0af-498659296c37",
+				"method": "GET"
+			},
+			{
+				"id": "695ad1ac-576e-431b-a91f-2cb1b767ea7f",
+				"method": "POST"
+			},
+			{
+				"id": "15808053-e6f4-49bd-8ae9-ee75f6cedcd8",
+				"method": "PUT"
+			},
+			{
+				"id": "9374cba3-391b-4f43-87f6-3d902b9c4ae4",
+				"method": "PUT"
+			},
+			{
+				"id": "2e4f3e65-dd85-4a51-91f6-04d5668863f3",
+				"method": "DELETE"
+			},
+			{
+				"id": "40caadf3-b8d3-422f-9768-22d5196796c1",
+				"method": "DELETE"
+			},
+			{
+				"id": "0c52b426-2d18-47a5-9562-eda0bbd98a62",
+				"method": "POST"
+			},
+			{
+				"id": "d4f2af45-f36d-4b51-9136-90d8828478b3",
+				"method": "GET"
+			}
+		]
+	}
+}
