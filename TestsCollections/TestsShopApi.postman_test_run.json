@@ -1,7 +1,7 @@
 {
-	"id": "7548a174-4a69-4f43-888a-09290232affd",
-	"name": "AutomativeTesting Homework2_3",
-	"timestamp": "2024-05-06T12:44:00.085Z",
+	"id": "b37cc1e6-a664-4d20-8256-3557e50ef683",
+	"name": "TestsShopApi",
+	"timestamp": "2024-05-06T19:48:54.964Z",
 	"collection_id": "34607912-144f46c7-b904-4aed-bed5-d3533e84c540",
 	"folder_id": 0,
 	"environment_id": "0",
@@ -9,8 +9,8 @@
 	"delay": 0,
 	"persist": true,
 	"status": "finished",
-	"startedAt": "2024-05-06T12:43:58.156Z",
-	"totalFail": 9,
+	"startedAt": "2024-05-06T19:48:54.104Z",
+	"totalFail": 10,
 	"results": [
 		{
 			"id": "68173cc7-9d44-4656-b0af-498659296c37",
@@ -49,7 +49,7 @@
 			"id": "695ad1ac-576e-431b-a91f-2cb1b767ea7f",
 			"name": "Post New Shop",
 			"url": "http://localhost:3000/api/shops",
-			"time": 5,
+			"time": 3,
 			"responseCode": {
 				"code": 201,
 				"name": "Created"
@@ -64,7 +64,7 @@
 				}
 			},
 			"times": [
-				5
+				3
 			],
 			"allTests": [
 				{
@@ -76,7 +76,7 @@
 			"id": "15808053-e6f4-49bd-8ae9-ee75f6cedcd8",
 			"name": "Update Item",
 			"url": "http://localhost:3000/api/items",
-			"time": 4,
+			"time": 2,
 			"responseCode": {
 				"code": 404,
 				"name": "Not Found"
@@ -101,7 +101,7 @@
 				}
 			},
 			"times": [
-				4
+				2
 			],
 			"allTests": [
 				{
@@ -115,7 +115,7 @@
 			"id": "9374cba3-391b-4f43-87f6-3d902b9c4ae4",
 			"name": "Update Shop",
 			"url": "http://localhost:3000/api/shops",
-			"time": 4,
+			"time": 2,
 			"responseCode": {
 				"code": 404,
 				"name": "Not Found"
@@ -140,7 +140,7 @@
 				}
 			},
 			"times": [
-				4
+				2
 			],
 			"allTests": [
 				{
@@ -154,34 +154,7 @@
 			"id": "2e4f3e65-dd85-4a51-91f6-04d5668863f3",
 			"name": "Delete Shop",
 			"url": "http://localhost:3000/api/shops",
-			"time": 6,
-			"responseCode": {
-				"code": 404,
-				"name": "Not Found"
-			},
-			"tests": {
-				"Delete status 204": false
-			},
-			"testPassFailCounts": {
-				"Delete status 204": {
-					"pass": 0,
-					"fail": 1
-				}
-			},
-			"times": [
-				6
-			],
-			"allTests": [
-				{
-					"Delete status 204": false
-				}
-			]
-		},
-		{
-			"id": "40caadf3-b8d3-422f-9768-22d5196796c1",
-			"name": "Delete Item",
-			"url": "http://localhost:3000/api/items",
-			"time": 6,
+			"time": 3,
 			"responseCode": {
 				"code": 404,
 				"name": "Not Found"
@@ -201,7 +174,40 @@
 				}
 			},
 			"times": [
-				6
+				3
+			],
+			"allTests": [
+				{
+					"Delete status 204": false,
+					"Response body is empty": false
+				}
+			]
+		},
+		{
+			"id": "40caadf3-b8d3-422f-9768-22d5196796c1",
+			"name": "Delete Item",
+			"url": "http://localhost:3000/api/items",
+			"time": 2,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Delete status 204": false,
+				"Response body is empty": false
+			},
+			"testPassFailCounts": {
+				"Delete status 204": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Response body is empty": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				2
 			],
 			"allTests": [
 				{
@@ -214,7 +220,7 @@
 			"id": "0c52b426-2d18-47a5-9562-eda0bbd98a62",
 			"name": "Post New Item",
 			"url": "http://localhost:3000/api/items",
-			"time": 5,
+			"time": 2,
 			"responseCode": {
 				"code": 201,
 				"name": "Created"
@@ -229,7 +235,7 @@
 				}
 			},
 			"times": [
-				5
+				2
 			],
 			"allTests": [
 				{
@@ -241,7 +247,7 @@
 			"id": "d4f2af45-f36d-4b51-9136-90d8828478b3",
 			"name": "Get All Shops",
 			"url": "http://localhost:3000/api/shops",
-			"time": 5,
+			"time": 4,
 			"responseCode": {
 				"code": 200,
 				"name": "OK"
@@ -261,7 +267,7 @@
 				}
 			},
 			"times": [
-				5
+				4
 			],
 			"allTests": [
 				{
@@ -272,7 +278,7 @@
 		}
 	],
 	"count": 1,
-	"totalTime": 42,
+	"totalTime": 25,
 	"collection": {
 		"requests": [
 			{
