@@ -1,0 +1,10 @@
+Certainly! Here are the translations of the HTTP status codes to Lithuanian:
+
+200 OK: Sėkmingas atsakas. Užklausa buvo sėkmingai įvykdyta.
+201 Created: Sukurta. Užklausa buvo sėkmingai įvykdyta ir sukūrė naują resursą.
+204 Įvykdyta. Nieko negražinu. (sėkmingo delet'o atveju gaunama)
+400 Bad Request: Bloga užklausa. Serveris negali apdoroti užklausos dėl klaidingos kliento užklausos struktūros arba netinkamo užklausos pranešimo formatavimo.
+401 Unauthorized: Neautorizuota. Serveris negali taikyti užklausos, nes trūksta tinkamų autentifikacijos kredencialų norimam resursui.
+403 Forbidden: Draudžiama. Serveris suprato užklausą, tačiau ją atsisako autorizuoti. Tai dažniausiai naudojama, kai serveris nenori suteikti prieigos prie resurso, nepriklausomai nuo autentifikacijos.
+404 Not Found: Nerasta. Serveris negali rasti prašomo resurso.
+500 Internal Server Error: Vidinė serverio klaida. Serveris susidūrė su netikėta sąlyga, dėl kurios jis negalėjo įvykdyti užklausos. Tai bendrinis klaidos pranešimas, grąžinamas, kai nėra tinkamesnio pranešimo. t.y. serveris užlūžo

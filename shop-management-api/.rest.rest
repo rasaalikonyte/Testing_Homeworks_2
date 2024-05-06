@@ -1,0 +1,35 @@
+### get all shops
+http://localhost:3000/api/shops
+
+### get all items
+http://localhost:3000/api/items
+
+### POST shop
+POST http://localhost:3000/api/shops/
+Content-Type: application/json
+
+{ 
+ "id": 5,
+ "name": "Shop5",
+ "city": "Vilnius"
+}
+
+### POST item
+POST http://localhost:3000/api/items/
+Content-Type: application/json
+
+{ 
+  "id": 6, 
+  "name": "Item6", 
+  "price": 6, 
+  "shopId": 2
+}
+
+
+
+
+### get shop by id
+http://localhost:3000/api/shops/3
+
+### get item by id
+http://localhost:3000/items/6
