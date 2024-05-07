@@ -1,0 +1,49 @@
+You already have a node.js express application for Shop and ShopItem management.
+The repo also contains PostmanCollection to test these calls.
+
+??? $ npm install  nodemon --save-dev
+??? $ npm install  newman --save-dev
+??? $ npm install  newman-reporter-htmlextra --save-dev
+
+!!! iš POSTMAN exportuoti:
+ testų kolekciją (mycollection.json),
+ test_run atskaitą (mycollection_test_run.json)
+ environment failą (workspace.postman_globals.json) (globals ar kt)
+į projektą (shop-management-api)
+
+!!! pakoreguoti package.json
+"scripts":{
+ "run": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "newman run mycollection.json -e workspace.postman_globals.json",
+    "test:report": "newman run mycollection_test_run.json -r htmlextra"
+}
+
+!!! Atsidaryti naują terminalą ir paleisti aplikaciją 'npm run dev'
+
+1. I should be able to run tests with 'npm run test'.
+This means i should have a dev dependency to newman.
+
+!!! 37068@RasaA MINGW64 ~/Desktop/Testavimas 2024-03-25/_Jaunius_Automative Testing/Homeworks/shop-management-api (main)
+$ npm run test
+
+VEIKIA
+
+2. 'npm run test:report' should generate an htmlextra report.
+Report should not be committed to repo. (.gitignore should be updated):
+
+!!! 37068@RasaA MINGW64 ~/Desktop/Testavimas 2024-03-25/_Jaunius_Automative Testing/Homeworks/shop-management-api (main)
+$npm run test:report
+
+ NEVEIKIA - NEFORMUOJA HTML: $ npm install  newman-reporter-htmlextra --save-dev
+
+???ar užtenka įrašyti į .gitignore failą .newman-reporter-htmlextra
+
+3. Try using Postman Variables and environments. BaseUrl should be an environment variable.
+This will require to export environment as a file as well.
+
+???
+
+
+Nothing should be installed with -g
+
