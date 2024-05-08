@@ -7,7 +7,7 @@
     "run": "node index.js",
     "dev": "nodemon index.js",
     "test": "newman run mycollection.json -e workspace.postman_globals.json",
-    "test:report": "newman run mycollection_test_run.json -r htmlextra"
+    "test:report": "newman run mycollection.json -r htmlextra"
   },
   "keywords": [],
   "author": "",

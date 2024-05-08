@@ -3,7 +3,7 @@ The repo also contains PostmanCollection to test these calls.
 
 ??? $ npm install  nodemon --save-dev
 ??? $ npm install  newman --save-dev
-??? $ npm install  newman-reporter-htmlextra --save-dev
+??? $ npm install  newman-reporter-htmlextra --save-dev AR $ npm install -S newman-reporter-htmlextra
 
 !!! iš POSTMAN exportuoti:
  testų kolekciją (mycollection.json),
@@ -36,6 +36,10 @@ Report should not be committed to repo. (.gitignore should be updated):
 $npm run test:report
 
  NEVEIKIA - NEFORMUOJA HTML: $ npm install  newman-reporter-htmlextra --save-dev
+
+ $ docker run -t -v $(pwd):/etc/newman dannydainton/htmlextra run mycollection.json -r htmlextra
+bash: docker: command not found
+
 
 ???ar užtenka įrašyti į .gitignore failą .newman-reporter-htmlextra
 
